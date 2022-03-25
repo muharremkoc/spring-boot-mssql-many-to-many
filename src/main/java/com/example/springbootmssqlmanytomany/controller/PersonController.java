@@ -42,7 +42,6 @@ public class PersonController {
                  PersonResponse personResponse=personMapper.personToPersonResponse(person);
                  personResponse.setSocialMediaResponseList(socialMediaAppMapper.socialMediaListToSocialMediaResponseList(person.getSocialMediaApp()));
              });
-
             */
         List<PersonResponse> personResponseList=personMapper.personListToPersonResponse(personList);
         return personResponseList;
