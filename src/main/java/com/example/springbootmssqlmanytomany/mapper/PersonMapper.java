@@ -23,6 +23,7 @@ public interface PersonMapper {
             @Mapping(target = "id",source = "id"),
             @Mapping(target = "firstName",source = "firstName"),
             @Mapping(target = "userName",source = "userName"),
+            @Mapping(target = "socialMediaResponseList",source = "socialMediaApp")
     })
     PersonResponse personToPersonResponse(Person person);
 

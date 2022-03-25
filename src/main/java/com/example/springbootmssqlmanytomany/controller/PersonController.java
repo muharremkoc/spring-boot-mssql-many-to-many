@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor
@@ -33,13 +34,18 @@ public class PersonController {
     }
 
     @GetMapping("/person")
-    public List<Person> personList(){
+    public List<PersonResponse> personList(){
              List<Person> personList=personService.getAllPersons();
+             personList.stream().map(person -> personMapper.personToPersonResponse(person)).collect(Collectors.toList());
+           /*
              personList.stream().forEach(person -> {
                  PersonResponse personResponse=personMapper.personToPersonResponse(person);
                  personResponse.setSocialMediaResponseList(socialMediaAppMapper.socialMediaListToSocialMediaResponseList(person.getSocialMediaApp()));
              });
-        return personList;
+
+            */
+        List<PersonResponse> personResponseList=personMapper.personListToPersonResponse(personList);
+        return personResponseList;
     }
 
     @DeleteMapping("/person/{id}")

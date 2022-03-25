@@ -29,6 +29,7 @@ public class Person {
 
 
     @ManyToMany(mappedBy = "personList", cascade = CascadeType.ALL)
+    @JsonIgnore
     List<SocialMediaApp> socialMediaApp=new ArrayList<>();
 
     public void addSocialMediaApp(SocialMediaApp socialMediaApp){
