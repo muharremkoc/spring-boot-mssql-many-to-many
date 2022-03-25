@@ -4,6 +4,18 @@
 
 This Project Goal Many-To-Many Relations in a Spring Boot Project
 
+
+## Technologies
+
+- MSSQL
+- Spring Starter JDBC
+- Spring Boot DevTools
+- Docker-Compose
+- Lombok
+- MapStruct
+- SpringDoc OpenAPI
+- Spring Starter JPA
+
 ## Installation
 
 
@@ -26,16 +38,7 @@ This Project Goal Many-To-Many Relations in a Spring Boot Project
 
 - Last,configuring application.properties settings. 
 
-## Technologies
 
-- MSSQL
-- Spring Starter JDBC
-- Spring Boot DevTools
-- Docker-Compose
-- Lombok
-- MapStruct
-- SpringDoc OpenAPI
-- Spring Starter JPA
 
 
 
