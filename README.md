@@ -38,5 +38,5 @@ This Project Goal Many-To-Many Relations in a Spring Boot Project
 - Spring Starter JPA
 
 
-## License
+
 [Muharrem Koç](https://github.com/muharremkoc)
